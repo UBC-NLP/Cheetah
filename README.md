@@ -1,8 +1,3 @@
-<p align="center">
-    <br>
-    <img src="./images/serengeti_logo.png"/>
-    <br>
-<p>
 
 <p align="center">
 <a href="https://github.com/UBC-NLP/serengeti/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/UBC-NLP/cheetah"></a>

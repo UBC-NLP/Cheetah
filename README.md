@@ -64,7 +64,7 @@ AfroNLG includes the following tasks: ```machine translation```,  ```paraphrase`
 ### 2.1 
 #### 2.1  Machine Translation
 | **Lang-Pairs**  |**Metric**   |   **mT0** | **mT5** | **Afri-MT5** | **AfriTeVa** |  **Cheetah** |
-|----------------|:---------:|:-------------:|:-----------:|:----------:|:----------:|
+|----------------|:---------:|:-------------:|:-----------:|:----------:|:----------:|:----------:|
 | English $\rightarrow$ Afrikaans | Bleu | **20.38<sup>±0.3</sup>**| 12.35<sup>±1.1</sup>|7.12<sup>±2.67 </sup> |  7.75<sup>±1.67</sup> |  19.72<sup>±0.75</sup> |
 | English $\rightarrow$ Bemba | Bleu | 19.19<sup>±0.3</sup> | 12.28<sup>±0.48 </sup> |  11.73<sup>±12.3 </sup>|**20.5<sup>±0.87</sup>**    | 18.9<sup>±1.22 </sup> |     
 | English $\rightarrow$ Lingala  | Bleu | **15.98<sup>±1.16</sup>** |  14.12<sup>±0.56</sup> |  14.32<sup>±12.74</sup> |  13.88<sup>±1.04</sup> | 9.64<sup>±1.11</sup> |  

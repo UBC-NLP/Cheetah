@@ -1,4 +1,3 @@
-
 <p align="center">
 <a href="https://github.com/UBC-NLP/serengeti/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/UBC-NLP/cheetah"></a>
 <a href="https://github.com/UBC-NLP/serengeti/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/UBC-NLP/cheetah"></a>
@@ -33,12 +32,13 @@ Low-resource African languages pose unique challenges for natural language proce
 ## 1. Our Language Models
 ## 1.1 Training Data
 
-* **Cheetah Training Data**: We are guided by three main principles in developing this data: quality, linguistic diversity, and coverage.
-Quality. Developing NLP technologies for low resource languages poses a significant challenge due to the limited availability of high-quality training data. To address this issue, we undertook the task of manually curating a diverse corpus spanning multiple domains, including news articles, health documents, religious texts, legal documents, and social media feeds. This manual curation approach was necessary because there were no existing datasets available for the majority of the languages we aimed to support, and we wanted to ensure the utilization of reliable and high-quality data. %By meticulously curating this extensive and diverse corpus, we aim to mitigate the challenges arising from the scarcity of training data for low resource languages. 
+**Cheetah Training Data**: We are guided by three main principles in developing this data: quality, linguistic diversity, and coverage.
 
-Coverage. In all, we train Cheetah using a 42G multi-domain corpus across $517$ African languages and language varieties. The languages are spoken in $50$ of $54$ African countries and they are written with five scripts. This provides support to at least $500$M Africans.
+***Quality***. Developing NLP technologies for low resource languages poses a significant challenge due to the limited availability of high-quality training data. To address this issue, we undertook the task of manually curating a diverse corpus spanning multiple domains, including news articles, health documents, religious texts, legal documents, and social media feeds. This manual curation approach was necessary because there were no existing datasets available for the majority of the languages we aimed to support, and we wanted to ensure the utilization of reliable and high-quality data. %By meticulously curating this extensive and diverse corpus, we aim to mitigate the challenges arising from the scarcity of training data for low resource languages. 
 
-Linguistic Diversity. The inclusion of languages from various domains, geographical regions, and linguistic typologies, along with the utilization of reliable data sources, contributes to enhancing the robustness and quality of Cheetah. Our data consists of languages from $14$ language families in Africa written in five different orthographies. Furthermore, our data spans languages with a vast array of exotic linguistic features including tone, vowel and consonant harmony, reduplication, word orders, and word classes.  
+***Coverage***. In all, we train Cheetah using a 42G multi-domain corpus across $517$ African languages and language varieties. The languages are spoken in $50$ of $54$ African countries and they are written with five scripts. This provides support to at least $500$M Africans.
+
+***Linguistic Diversity***. The inclusion of languages from various domains, geographical regions, and linguistic typologies, along with the utilization of reliable data sources, contributes to enhancing the robustness and quality of Cheetah. Our data consists of languages from $14$ language families in Africa written in five different orthographies. Furthermore, our data spans languages with a vast array of exotic linguistic features including tone, vowel and consonant harmony, reduplication, word orders, and word classes.  
 
 * Religious Domain. Our religious data is taken from online Bibles, Qurans, and data crawled from the Jehovah’s witness website. We also include religious texts from the book of Mormon.
 * News Domain. We collect data from online newspapers [(Adebara and Abdul-Mageed, 2022)](https://aclanthology.org/2022.acl-long.265/) and news sites such as [(Voice of America)](https://www.voanews.com/navigation/allsites), [(Voice of Nigeria)](https://von.gov.ng/), [(BBC)](https://www.bbc.com/news), [(Global voices)](https://globalvoices.org/), and [(DW)](https://www.dw.com/en/top-stories/s-9097) news sites. We collect local newspapers from 27 languages from across Africa.

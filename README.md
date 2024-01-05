@@ -64,21 +64,13 @@ AfroNLG includes the following tasks: ```machine translation```,  ```paraphrase`
 ### 2.1 
 #### 2.1  Machine Translation
 | **Lang-Pairs**  |**Metric**   |   **mT0** | **mT5** | **Afri-MT5** | **AfriTeVa** |  **Cheetah** |
-
 |----------------|:---------:|:-------------:|:-----------:|:----------:|:----------:|
-
-| English $\rightarrow$ Afrikaans                | Bleu            | **20.38<sup>±0.3</sup>**| 12.35<sup>±1.1</sup>|7.12<sup>±2.67 </sup> |  7.75<sup>±1.67</sup> |  19.72<sup>±0.75</sup> | 
-
-| English $\rightarrow$ Bemba                    | Bleu            | 19.19<sup>±0.3</sup> | 12.28<sup>±0.48 </sup> |  11.73<sup>±12.3 </sup>|**20.5<sup>±0.87</sup>**    | 18.9<sup>±1.22 </sup> |     
-
-| English $\rightarrow$ Lingala                  | Bleu            | **15.98<sup>±1.16</sup>** |  14.12<sup>±0.56</sup> |  14.32<sup>±12.74</sup> |  13.88<sup>±1.04</sup> | 9.64<sup>±1.11</sup> |  
-
-| English $\rightarrow$ Rundi                    | Bleu            | **12.26<sup>±0.47</sup>** |  8.82<sup>±0.43</sup>|9.57<sup>±0.42</sup> |  7.83<sup>±1.04</sup> | 10.54<sup>±0.54</sup> |  
-
-| English $\rightarrow$ Sesotho                  | Bleu            | 11.04<sup>±1.2</sup> | 12.74<sup>±0.75</sup> |  10.0<sup>±1.79</sup> |  10.76<sup>±1.4</sup> | **13.3<sup>±1.38</sup>** |  
-
-| English $\rightarrow$ Swahili                  | Bleu            | 10.59<sup>±1.84</sup> | 9.33<sup>±0.58</sup>|3.08<sup>±0.57</sup> |  7.24<sup>±0.46</sup> | **11.08<sup>±0.61</sup>** | 
-
+| English $\rightarrow$ Afrikaans | Bleu | **20.38<sup>±0.3</sup>**| 12.35<sup>±1.1</sup>|7.12<sup>±2.67 </sup> |  7.75<sup>±1.67</sup> |  19.72<sup>±0.75</sup> |
+| English $\rightarrow$ Bemba | Bleu | 19.19<sup>±0.3</sup> | 12.28<sup>±0.48 </sup> |  11.73<sup>±12.3 </sup>|**20.5<sup>±0.87</sup>**    | 18.9<sup>±1.22 </sup> |     
+| English $\rightarrow$ Lingala  | Bleu | **15.98<sup>±1.16</sup>** |  14.12<sup>±0.56</sup> |  14.32<sup>±12.74</sup> |  13.88<sup>±1.04</sup> | 9.64<sup>±1.11</sup> |  
+| English $\rightarrow$ Rundi    | Bleu | **12.26<sup>±0.47</sup>** |  8.82<sup>±0.43</sup>|9.57<sup>±0.42</sup> |  7.83<sup>±1.04</sup> | 10.54<sup>±0.54</sup> |  
+| English $\rightarrow$ Sesotho  | Bleu  | 11.04<sup>±1.2</sup> | 12.74<sup>±0.75</sup> |  10.0<sup>±1.79</sup> |  10.76<sup>±1.4</sup> | **13.3<sup>±1.38</sup>** |  
+| English $\rightarrow$ Swahili  | Bleu  | 10.59<sup>±1.84</sup> | 9.33<sup>±0.58</sup>|3.08<sup>±0.57</sup> |  7.24<sup>±0.46</sup> | **11.08<sup>±0.61</sup>** | 
 | English $\rightarrow$ Xhosa                    | Bleu            | 10.04<sup>±0.98</sup> | 8.25<sup>±0.7</sup> |  3.86<sup>±1.35</sup> |  7.5<sup>±0.32</sup> |  **12.34<sup>±0.51</sup>** | 
 | English $\rightarrow$ Zulu                     | Bleu            | 17.65<sup>±1.86 </sup> | 17.97<sup>±1.69 </sup> |  1.9<sup>±1.11 }    | 13.45<sup>±1.81 </sup> | 19.49<sup>±1.16</sup> |
 | English $\rightarrow$ Hausa                    | Bleu            | 5.06<sup>±0.21</sup> | 4.96<sup>±0.16</sup> | 0.85<sup>±0.04</sup> |  7.32<sup>±0.00</sup>   | **9.22<sup>±0.08</sup>** |  

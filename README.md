@@ -36,7 +36,7 @@ Low-resource African languages pose unique challenges for natural language proce
 
 ***Quality***. Developing NLP technologies for low resource languages poses a significant challenge due to the limited availability of high-quality training data. To address this issue, we undertook the task of manually curating a diverse corpus spanning multiple domains, including news articles, health documents, religious texts, legal documents, and social media feeds. This manual curation approach was necessary because there were no existing datasets available for the majority of the languages we aimed to support, and we wanted to ensure the utilization of reliable and high-quality data. 
 
-***Coverage***. In all, we train Cheetah using a 42G multi-domain corpus across **517** African languages and language varieties. The languages are spoken in **50** of **54** African countries and they are written with five scripts. This provides support to at least $500$M Africans.
+***Coverage***. In all, we train Cheetah using a 42G multi-domain corpus across **517** African languages and language varieties. The languages are spoken in **50** of **54** African countries and they are written with five scripts. This provides support to at least **500M** Africans.
 
 ***Linguistic Diversity***. The inclusion of languages from various domains, geographical regions, and linguistic typologies, along with the utilization of reliable data sources, contributes to enhancing the robustness and quality of Cheetah. Our data consists of languages from **14** language families in Africa written in five different orthographies. Furthermore, our data spans languages with a vast array of exotic linguistic features including tone, vowel and consonant harmony, reduplication, word orders, and word classes.  
 
@@ -48,9 +48,9 @@ Low-resource African languages pose unique challenges for natural language proce
   
 ## 1.2 Model Architecture
 
-We pretrain Cheetah using the encoder-decoder architecture [(xue-etal-2021-mt5)](https://aclanthology.org/2021.naacl-main.41/). Each of the encoder and decoder components is similar in size and configuration to T5, with $12$ layers each with $12$ attention heads, and $768$ hidden units for the base model. In total, this results in a model with $\sim580$ million parameters. 
+We pretrain Cheetah using the encoder-decoder architecture [(xue-etal-2021-mt5)](https://aclanthology.org/2021.naacl-main.41/). Each of the encoder and decoder components is similar in size and configuration to T5, with 12 layers each with 12 attention heads, and 768 hidden units for the base model. In total, this results in a model with ~580 million parameters. 
 ## 1.3.  Cheetah Model
-For pretraining Cheetah, we use a learning rate of $0.01$, a batch size of $1,024$ sequences, and a maximum sequence length of $1,024$. We pretrain each model for $1$M steps. We train our models on Google Cloud TPU with $128$ cores (v$3-128$) from TensorFlow Research Cloud (TFRC).
+For pretraining Cheetah, we use a learning rate of 0.01, a batch size of 1,024 sequences, and a maximum sequence length of 1,024. We pretrain each model for 1M steps. We train our models on Google Cloud TPU with 128 cores (v3-128) from TensorFlow Research Cloud (TFRC).
 Cheetah Pytorch and Tenserflow checkpoints are available on Huggingface website for direct download and use ```exclusively for research```. `For commercial use, please contact the authors via email @ (*muhammad.mageed[at]ubc[dot]ca*).`
 
 | **Model**   | **Link** | 

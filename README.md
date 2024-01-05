@@ -138,8 +138,7 @@ AfroNLG includes the following tasks: ```machine translation```,  ```paraphrase`
 
 | **Langs**  |**Metric**   |   **mT0** | **mT5** | **Afri-MT5** | **AfriTeVa** |  **Cheetah** |
 |----------------|:---------:|:-------------:|:-----------:|:----------:|:----------:|:----------:|
-
-| Multilingual   | Bleu | 6.53<sup>±0.02</sup> | 6.65<sup>±0.08</sup> | 0.1<sup>±0.02</sup>    | 5.2<sup>±0.02</sup>  | **7.52<sup>±0.07</sup>**  | 
+| Multilingual   | Bleu | 6.53<sup>±0.02</sup> | 6.65<sup>±0.08</sup> | 0.1<sup>±0.02</sup>    | 5.2<sup>±0.02</sup>  | **7.52<sup>±0.07</sup>**  |  
 | Amharic  | Bleu | 3.13<sup>±0.23</sup>   | 2.65<sup>±0.68</sup> | 0.34<sup>±0.14</sup>   | 2.31<sup>±0.14</sup> | **4.34<sup>±0.34</sup>**  |  
 | Igbo  | Bleu | 6.95<sup>±0.13</sup>  | 6.9<sup>±0.22</sup>  | 0.77<sup>±0.12</sup>   | 4.61<sup>±0.14</sup>  | **8.47<sup>±0.07</sup>**  |  
 | Oromo | Bleu | 1.1<sup>±1.84</sup> | 2.66<sup>±0.19</sup> | 0.21<sup>±0.06</sup>   | 1.54<sup>±0.17</sup>    | **3.26<sup>±0.21</sup>**  |  

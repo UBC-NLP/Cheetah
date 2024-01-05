@@ -63,9 +63,8 @@ AfroNLG includes the following tasks: ```machine translation```,  ```paraphrase`
 
 ### 2.1 
 #### 2.1  Machine Translation
-| **Dataset**  | **Lang-Pairs**  |   **mT0** | **mT5** | **Afri-MT5** | **AfriTeVa** |  **Cheetah** |
+| **Lang-Pairs**  |**Metric**   |   **mT0** | **mT5** | **Afri-MT5** | **AfriTeVa** |  **Cheetah** |
 |----------------|:---------:|:-------------:|:-----------:|:----------:|:----------:|
-
 | English $\rightarrow$ Afrikaans                | Bleu            | **20.38<sup>±0.3</sup>**| 12.35<sup>±1.1</sup>|7.12<sup>±2.67 </sup> |  7.75<sup>±1.67</sup> |  19.72<sup>±0.75}           
 | English $\rightarrow$ Bemba                    | Bleu            | 19.19<sup>±0.3</sup> | 12.28<sup>±0.48 </sup> |  11.73<sup>±12.3 </sup>|**20.5<sup>±0.87</sup>**    | 18.9<sup>±1.22 </sup> |          
 | English $\rightarrow$ Lingala                  | Bleu            | **15.98<sup>±1.16</sup>** |  14.12<sup>±0.56</sup> |  14.32<sup>±12.74</sup> |  13.88<sup>±1.04</sup> | 9.64<sup>±1.11</sup> |           
@@ -106,15 +105,7 @@ AfroNLG includes the following tasks: ```machine translation```,  ```paraphrase`
 | Nyankore $\rightarrow$ Luganda                 | Bleu            | 8.54<sup>±0.17</sup> | 6.91<sup>±0.23</sup> |2.01<sup>±0.25 </sup> |  **6.77<sup>±6.73</sup>**    | 6.25<sup>±10.26</sup> |         
 | Nyankore $\rightarrow$ Ateso                   | Bleu            | 3.33<sup>±0.11</sup> | 2.25<sup>±0.23</sup> |2.12<sup>±0.4</sup>    | 6.27<sup>±0.12</sup>     | **6.36<sup>±0.4</sup>** |
 
-|  LafandMT [Ifeoluwa Adelani et al., 2021](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00416/107614/MasakhaNER-Named-Entity-Recognition-for-African) |               |81.41<sup>±0.26</sup> |78.57<sup>±0.53</sup> |84.16<sup>±0.45</sup> |81.42<sup>±0.30</sup> |81.23<sup>±0.32</sup> |
-|  MasakaNER-v2 [Ifeoluwa Adelani et al., 2022](https://aclanthology.org/2022.emnlp-main.298/)    |87.17<sup>±0.18</sup> |84.82<sup>±0.96</sup>  |88.69<sup>±0.12</sup> |86.22<sup>±0.06</sup>  |86.57<sup>±0.27</sup> |    
-|  MasakaNER-east*                                      | 80.38<sup>±0.56</sup> | 78.33<sup>±1.25</sup> |  83.02<sup>±0.31</sup> |  79.31<sup>±0.92</sup> | 80.53<sup>±0.71</sup> | 
-|  MasakaNER-eastwest | 82.85<sup>±0.38</sup> | 82.37<sup>±0.90</sup> | **86.31<sup>±0.30</sup>**  | 82.98<sup>±0.44</sup> |  82.90<sup>±0.49</sup> |      
-|  MasakaNER-west    | 82.85<sup>±0.79</sup> | 83.99<sup>±0.39</sup>  | **86.78<sup>±0.44</sup>** | 84.08<sup>±0.32</sup>  | 82.06<sup>±0.67</sup> |     
-|  NCHLT-NER     [(SADiLaR)](https://www.sadilar.org/)| 71.41<sup>±0.07</sup> | 70.58<sup>±0.26</sup>  | 72.27<sup>±0.14</sup>  | 68.74<sup>±0.29</sup>  |**73.18<sup>±0.24</sup>** |       
-|  Yoruba-Twi-NER  [Alabi et al., 2020](https://aclanthology.org/2020.lrec-1.335/)     | 61.18<sup>±2.19</sup> |  70.37<sup>±0.61</sup>  | 58.48<sup>±1.85</sup>  |57.99<sup>±2.61</sup> |
 
-Metric is F1. 
 #### 2.2  Phrase Chuncking
 
 | **Dataset**  |  **XLMR** | **mBERT** | **Afro-XLMR** | **AfriBERTa** |  **SERENGETI-E110** | **SERENGETI-E250** |  **SERENGETI** | 

@@ -106,28 +106,37 @@ AfroNLG includes the following tasks: ```machine translation```,  ```paraphrase`
 | Nyankore $\rightarrow$ Ateso                   | Bleu            | 3.33<sup>±0.11</sup> | 2.25<sup>±0.23</sup> |2.12<sup>±0.4</sup>    | 6.27<sup>±0.12</sup>     | **6.36<sup>±0.4</sup>** |
 
 #### 2.2  Paraphrase
-| **Lang-Pairs**  |**Metric**   |   **mT0** | **mT5** | **Afri-MT5** | **AfriTeVa** |  **Cheetah** |
+| **Langs**  |**Metric**   |   **mT0** | **mT5** | **Afri-MT5** | **AfriTeVa** |  **Cheetah** |
 |----------------|:---------:|:-------------:|:-----------:|:----------:|:----------:|:----------:|                                        
- | Multilingual   | Bleu  | 41.79<sup>±0.28</sup> | 41.75<sup>±0.21 </sup> |34.72<sup>±0.51</sup> | 43.02<sup>±1.25</sup> | **43.23<sup>±0.09</sup>**| 
-| Berber   | Bleu | 44.84<sup>±0.31</sup> | 44.03<sup>±0.24</sup> |36.08<sup>±0.83</sup>   | **46.41<sup>±0.71</sup>** |46.0<sup>±0.27</sup> |          
-| Kabyle   | Bleu | 25.91<sup>±0.13</sup> | 25.32<sup>±0.46</sup> |11.56<sup>±0.73</sup>   | 16.06<sup>±14.79</sup> | **26.27<sup>±0.56</sup>** |
+| Multilingual   | Bleu  | 41.79<sup>±0.28</sup> | 41.75<sup>±0.21 </sup> | 34.72<sup>±0.51</sup> | 43.02<sup>±1.25</sup> | **43.23<sup>±0.09</sup>** | 
+| Berber   | Bleu | 44.84<sup>±0.31</sup> | 44.03<sup>±0.24</sup> | 36.08<sup>±0.83</sup>   | **46.41<sup>±0.71</sup>** |46.0<sup>±0.27</sup> |          
+| Kabyle   | Bleu | 25.91<sup>±0.13</sup> | 25.32<sup>±0.46</sup> | 11.56<sup>±0.73</sup>   | 16.06<sup>±14.79</sup> | **26.27<sup>±0.56</sup>** |
 
 
 #### 2.3  Question Answering
 
-| **Lang-Pairs**  |**Metric**   |   **mT0** | **mT5** | **Afri-MT5** | **AfriTeVa** |  **Cheetah** |
+| **Langs**  |**Metric**   |   **mT0** | **mT5** | **Afri-MT5** | **AfriTeVa** |  **Cheetah** |
 |----------------|:---------:|:-------------:|:-----------:|:----------:|:----------:|:----------:|
 | QA Swahili   | F1         | **79.84<sup>±0.19</sup>** | 72.04<sup>±0.54</sup> | 0      | 62.64<sup>±0.78</sup>   | 71.98<sup>±1.18</sup>|         
 
 
-#### 2.3  Part of Speech Tagging
+#### 2.4  Summarization
 
-| **Dataset**  |  **XLMR** | **mBERT** | **Afro-XLMR** | **AfriBERTa** |  **SERENGETI-E110** | **SERENGETI-E250** |  **SERENGETI** | 
-|----------------|:---------:|:-------------:|:-----------:|:----------:|:----------:|:-----------:|:-----------:|
-|  POS-tagging [(Onyenwe et al., 2018,2019)](https://dl.acm.org/doi/10.1145/3146387)                 | 85.50<sup>±0.08</sup>  |  85.42<sup>±0.13</sup>  | 85.39<sup>±0.21</sup> | 85.43<sup>±0.05</sup> | 85.50<sup>±0.16</sup> | **85.61<sup>±0.13</sup>** | 85.54<sup>±0.08</sup> |
+| **Langs**  |**Metric**   |   **mT0** | **mT5** | **Afri-MT5** | **AfriTeVa** |  **Cheetah** |
+|----------------|:---------:|:-------------:|:-----------:|:----------:|:----------:|:----------:|
+| Multilingual  | RougeL | 22.31<sup>±0.12</sup> | 22.23<sup>±0.04</sup>| 5.34<sup>±0.48</sup>  | 18.97<sup>±0.06</sup> | 24.86<sup>±0.02 </sup>|                                                             | Amharic  | RougeL | 13.81<sup>±0.04</sup> | 13.09<sup>±0.03</sup> | 4.4<sup>±1.07</sup> | 8.29<sup>±0.51</sup>  | **15.09<sup>±0.1</sup>** |                                                  
+| Igbo   | RougeL | **18.9<sup>±0.73</sup>** | 13.22<sup>±0.46</sup> | 14.24<sup>±0.39</sup> | 16.05<sup>±0.49</sup> | 17.36<sup>±0.43</sup> |                                                                
+| Oromo  | RougeL | 11.28<sup>±0.03</sup> | 10.51<sup>±0.07</sup> | 3.52<sup>±0.49</sup> | 7<sup>±1.73</sup>  | **14.53<sup>±0.1</sup>** |
+| Rundi  | RougeL | 19.63<sup>±0.01 </sup> | 18.02<sup>±0.13 </sup> |11.82<sup>±0.39 </sup> | 16.13<sup>±0.03</sup> | **22.57<sup>±0.04</sup>** | 
+| Swahili | RougeL | 26.38<sup>±0.02</sup> | 24.81<sup>±0.11</sup> |15.07<sup>±0.17</sup> | 21.59<sup>±0.13</sup> | **29.05<sup>±0.13</sup>** | 
+| Yoruba  | RougeL | 21.57<sup>±0.05</sup> | 20.06<sup>±0.12</sup> |13.52<sup>±0.18</sup> | 17.3<sup>±0.11</sup>  | **22.49<sup>±0.0</sup>** | 
+| Hausa   | RougeL | 26.46<sup>±0.06</sup> | 25.76<sup>±0.02</sup> |19.96<sup>±0.26</sup> | 25.19<sup>±0.11</sup> | **30.07<sup>±0.31</sup>** | 
+| Nigerian Pidgin | RougeL | 26.54<sup>±0.05</sup> | 25.79<sup>±0.1</sup> | 14.28<sup>±1.23</sup> | 20.29<sup>±0.12</sup> | **27.08<sup>±0.02</sup>** | 
+| Somali | RougeL | 20.69<sup>±0.08</sup> | 19.21<sup>±0.06</sup> |13.62<sup>±0.81</sup> | 19.27<sup>±0.18</sup> | **23.92<sup>±0.04</sup>** |
+| Tigrinya | RougeL | 15.84<sup>±0.13</sup> | 13.93<sup>±0.11</sup> | 6.53<sup>±0.42</sup>   | 10.07<sup>±0.09</sup> | **16.88<sup>±0.12</sup>** |
+
      
-Metric is F1. 
-#### 2.4  News Classification
+#### 2.5  Title Generation
 
 | **Dataset**  |  **XLMR** | **mBERT** | **Afro-XLMR** | **AfriBERTa** |  **SERENGETI-E110** | **SERENGETI-E250** |  **SERENGETI** | 
 |----------------|:---------:|:-------------:|:-----------:|:----------:|:----------:|:-----------:|:-----------:|

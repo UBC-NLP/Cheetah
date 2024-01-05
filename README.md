@@ -153,11 +153,12 @@ AfroNLG includes the following tasks: ```machine translation```,  ```paraphrase`
 
 #### 2.6  Cloze
 
-| **Dataset**  |  **XLMR** | **mBERT** | **Afro-XLMR** | **AfriBERTa** |  **SERENGETI-E110** | **SERENGETI-E250** |  **SERENGETI** | 
-|----------------|:---------:|:-------------:|:-----------:|:----------:|:----------:|:-----------:|:-----------:|
-|  Bambara-V1 [(Diallo et al., 2021)](https://arxiv.org/abs/2108.02524)    | 47.17<sup>±1.83</sup> |  64.56<sup>±1.71</sup> | 59.40<sup>±0.56</sup> | 65.06<sup>±2.08</sup> |  65.07<sup>±2.59</sup> | **65.76<sup>±2.02</sup>** | 63.36<sup>±3.31</sup> |
-|  Pidgin Tweet [(Oyewusi et al., 2020)](https://arxiv.org/abs/2003.12450v1)     | 70.42<sup>±0.68</sup> |  68.59<sup>±0.47</sup> | **71.40<sup>±0.51</sup>** | 69.19<sup>±0.97</sup> | 71.06<sup>±0.39</sup> | 70.46<sup>±1.02</sup> | 69.74<sup>±0.92</sup> |
-|  YOSM [(Shode et al., 2022)](https://arxiv.org/abs/2204.09711)     | 85.57<sup>±1.09</sup> |  85.25<sup>±0.25</sup> | 87.46<sup>±0.42</sup> | 88.66<sup>±0.23</sup> | 86.86<sup>±0.95</sup> | 85.58<sup>±1.51</sup> | **87.86<sup>±0.81</sup>** |
+| **Task**  |**Metric**   |   **mT0** | **mT5** | **Afri-MT5** | **AfriTeVa** |  **Cheetah** |
+|----------------|:---------:|:-------------:|:-----------:|:----------:|:----------:|:----------:|
+| Mask-one - 517 Languages | Bleu  | 13.61<sup>±0.91</sup> | 8.18<sup>±3.94</sup> | 0.00<sup>±0.00</sup>   | 8.36<sup>±3.42</sup>  | **13.98<sup>±0.32</sup>** |
+| Mask-at-least-one - 517 Languages | Bleu | 2.36<sup>±0.11</sup> | 2.66<sup>±0.09</sup> | 0.93<sup>±0.12</sup>  | 0.68<sup>±0.09</sup> | **7.07<sup>±0.09</sup>** |
+
+
 
 
 #  3. How to use Cheetah model

@@ -106,13 +106,12 @@ AfroNLG includes the following tasks: ```machine translation```,  ```paraphrase`
 | Nyankore $\rightarrow$ Ateso                   | Bleu            | 3.33<sup>±0.11</sup> | 2.25<sup>±0.23</sup> |2.12<sup>±0.4</sup>    | 6.27<sup>±0.12</sup>     | **6.36<sup>±0.4</sup>** |
 
 
-#### 2.2  Phrase Chuncking
+#### 2.2  Question Answering
 
-| **Dataset**  |  **XLMR** | **mBERT** | **Afro-XLMR** | **AfriBERTa** |  **SERENGETI-E110** | **SERENGETI-E250** |  **SERENGETI** | 
-|----------------|:---------:|:-------------:|:-----------:|:----------:|:----------:|:-----------:|:-----------:|
-|  Phrase-Chunk [(SADiLaR)](https://www.sadilar.org/)                  | 88.86<sup>±0.18</sup> | 88.65<sup>±0.06</sup> | 90.12<sup>±0.12</sup> | 87.86<sup>±0.20</sup> | 90.39<sup>±0.21</sup> | 89.93<sup>±0.33</sup> | **90.51<sup>±0.04</sup>** |
+| **Lang-Pairs**  |**Metric**   |   **mT0** | **mT5** | **Afri-MT5** | **AfriTeVa** |  **Cheetah** |
+|----------------|:---------:|:-------------:|:-----------:|:----------:|:----------:|:----------:|
+| QA Swahili   | F1         | **79.84<sup>±0.19</sup>** | 72.04<sup>±0.54</sup> | 0      | 62.64<sup>±0.78</sup>   | 71.98<sup>±1.18</sup>|         
 
-Metric is F1. 
 
 #### 2.3  Part of Speech Tagging
 

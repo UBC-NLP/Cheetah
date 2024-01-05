@@ -19,11 +19,9 @@ Low-resource African languages pose unique challenges for natural language proce
   - [2.2 Paraphrase](#22-paraphrase)
   - [2.3 Summarization](#23-summarization)
   - [2.4 News Classification](#24-news-classification)
-  - [2.5 Sentiment Analysis](#25-sentiment-analysis)
-  - [2.6 Topic Classification](#26-topic-classification)
-  - [2.7 Question Answering](#27-question-answering)
-  - [2.8 Language Identification](#28-language-identification) 
-- [3. How to use Serengeti model](#3-how-to-use-serengeti-model)
+  - [2.5 Title Generation](#25-title-generation)
+  - [2.6 Cloze](#26-cloze)
+- [3. How to use Cheetah model](#3-how-to-use-cheetah-model)
 - [4. Ethics](#4-ethics)
 - [5. Support Languages](#5-supported-languages)
 - [6. Citation](#6-citation)
@@ -138,16 +136,23 @@ AfroNLG includes the following tasks: ```machine translation```,  ```paraphrase`
      
 #### 2.5  Title Generation
 
-| **Dataset**  |  **XLMR** | **mBERT** | **Afro-XLMR** | **AfriBERTa** |  **SERENGETI-E110** | **SERENGETI-E250** |  **SERENGETI** | 
-|----------------|:---------:|:-------------:|:-----------:|:----------:|:----------:|:-----------:|:-----------:|
-|  Amharic News [(Azime and Mohammed, 2021)](https://arxiv.org/abs/2103.05639)    | 84.97<sup>±0.55</sup> |  59.01<sup>±1.47</sup> | 86.18<sup>±0.85</sup> | 86.54<sup>±1.20</sup> |  86.50<sup>±0.71</sup> | 86.34<sup>±0.30</sup> | **86.82<sup>±0.72</sup>** |
-|  Kinnews [(Niyongabo et al., 2020)](https://aclanthology.org/2020.coling-main.480/)     | 76.58<sup>±0.70</sup> |  77.45<sup>±0.43</sup> | 79.13<sup>±0.53</sup> | 80.40<sup>±1.50</sup> | **81.43<sup>±1.02</sup>** | 80.38<sup>±1.36</sup> | 79.80<sup>±0.68</sup> |
-|  Kirnews [(Niyongabo et al., 2020)](https://aclanthology.org/2020.coling-main.480/)     | 57.18<sup>±3.44</sup> |  74.71<sup>±2.56</sup> | 87.67<sup>±0.92</sup> | **89.59<sup>±0.27</sup>** | 78.75<sup>±3.24</sup> | 86.60<sup>±1.28</sup> |  87.53<sup>±2.31</sup> |
-|  Swahili News V.0.2 [(David, 2020a,b)](https://dl.acm.org/doi/10.1145/3146387)     | 87.50<sup>±0.91</sup> |  85.12<sup>±0.93</sup> | 87.49<sup>±1.26</sup> | 87.91<sup>±0.36</sup> | 87.33<sup>±0.28</sup> |  86.12<sup>±1.30</sup> |  **88.24<sup>±0.99</sup>** |
+| **Langs**  |**Metric**   |   **mT0** | **mT5** | **Afri-MT5** | **AfriTeVa** |  **Cheetah** |
+|----------------|:---------:|:-------------:|:-----------:|:----------:|:----------:|:----------:|
 
-Metric is F1
+| Multilingual   | Bleu | 6.53<sup>±0.02</sup> | 6.65<sup>±0.08</sup> | 0.1<sup>±0.02</sup>    | 5.2<sup>±0.02</sup>  | **7.52<sup>±0.07</sup>**  | 
+| Amharic  | Bleu | 3.13<sup>±0.23</sup>   | 2.65<sup>±0.68</sup> | 0.34<sup>±0.14</sup>   | 2.31<sup>±0.14</sup> | **4.34<sup>±0.34</sup>**  |  
+| Igbo  | Bleu | 6.95<sup>±0.13</sup>  | 6.9<sup>±0.22</sup>  | 0.77<sup>±0.12</sup>   | 4.61<sup>±0.14</sup>  | **8.47<sup>±0.07</sup>**  |  
+| Oromo | Bleu | 1.1<sup>±1.84</sup> | 2.66<sup>±0.19</sup> | 0.21<sup>±0.06</sup>   | 1.54<sup>±0.17</sup>    | **3.26<sup>±0.21</sup>**  |  
+| Rundi | Bleu | 4.4<sup>±0.28</sup> | 4.13<sup>±0.22</sup> | 0.84<sup>±0.07</sup>   | 3.33<sup>±0.23</sup>    | **6.05<sup>±0.5</sup>**  |   
+| Swahili | Bleu | 9.1<sup>±0.23</sup> | 9.31<sup>±0.11</sup> | 1.22<sup>±0.09</sup>   | 7.01<sup>±0.09</sup>  | **10.59<sup>±0.6</sup>**  |  
+| Yoruba | Bleu  | 6.8<sup>±0.16</sup> | 7.23<sup>±0.59</sup> | 0.34<sup>±0.05</sup>    | 5.04<sup>±2.0</sup>  | **7.97<sup>±0.32</sup>**  |  
+| Hausa  | Bleu  | 8.11<sup>±0.24 </sup>  | 7.3<sup>±0.34</sup>   | 2.59<sup>±0.01</sup>   | 6.69<sup>±0.18</sup> | **8.48<sup>±0.23</sup>**  |   
+| Nigerian Pidgin | Bleu  | **6.75<sup>±0.6</sup>** | 3.96<sup>±4.3</sup>   | 0.89<sup>±0.02</sup>   | 4.72<sup>±0.84</sup> | 6.22<sup>±0.28</sup>  |           
+| Somali  | Bleu  | 3.37<sup>±0.21</sup> | 3.31<sup>±0.16</sup> | 0.38<sup>±0.11</sup>   | 2.82<sup>±0.47</sup>  | **5.25<sup>±0.14</sup>**  |  
+| Tigrinya  | Bleu | 2.99<sup>±0.1</sup> | 2.94<sup>±1.09</sup> | 0.7<sup>±0.18</sup>    | 1.92<sup>±0.26</sup>  | **5.1<sup>±0.05</sup>**  |   
 
-#### 2.5  Sentiment Analysis
+
+#### 2.6  Cloze
 
 | **Dataset**  |  **XLMR** | **mBERT** | **Afro-XLMR** | **AfriBERTa** |  **SERENGETI-E110** | **SERENGETI-E250** |  **SERENGETI** | 
 |----------------|:---------:|:-------------:|:-----------:|:----------:|:----------:|:-----------:|:-----------:|
@@ -155,40 +160,7 @@ Metric is F1
 |  Pidgin Tweet [(Oyewusi et al., 2020)](https://arxiv.org/abs/2003.12450v1)     | 70.42<sup>±0.68</sup> |  68.59<sup>±0.47</sup> | **71.40<sup>±0.51</sup>** | 69.19<sup>±0.97</sup> | 71.06<sup>±0.39</sup> | 70.46<sup>±1.02</sup> | 69.74<sup>±0.92</sup> |
 |  YOSM [(Shode et al., 2022)](https://arxiv.org/abs/2204.09711)     | 85.57<sup>±1.09</sup> |  85.25<sup>±0.25</sup> | 87.46<sup>±0.42</sup> | 88.66<sup>±0.23</sup> | 86.86<sup>±0.95</sup> | 85.58<sup>±1.51</sup> | **87.86<sup>±0.81</sup>** |
 
-Metric is F1
-#### 2.6  Topic Classification
 
-| **Dataset**  |  **XLMR** | **mBERT** | **Afro-XLMR** | **AfriBERTa** |  **SERENGETI-E110** | **SERENGETI-E250** |  **SERENGETI** | 
-|----------------|:---------:|:-------------:|:-----------:|:----------:|:----------:|:-----------:|:-----------:|
-|  Hausa-Topic [(Hedderich et al., 2020)](https://aclanthology.org/2020.emnlp-main.204/)    | 85.80<sup>±1.45</sup> |  81.38<sup>±0.42</sup> | 88.67<sup>±0.30</sup> | **92.59<sup>±0.69</sup>**|  88.52<sup>±1.31</sup> | 89.07<sup>±0.95</sup> | 89.93<sup>±0.49</sup> |
-|  Yoruba-Topic [(Hedderich et al., 2020)](https://aclanthology.org/2020.emnlp-main.204/)   | 54.69<sup>±2.89</sup> |  71.79<sup>±1.43</sup> | 75.13<sup>±1.40</sup> | **81.79<sup>±0.66** | 65.22<sup>±4.72</sup> | 66.34<sup>±4.09</sup> | 79.87<sup>±1.61</sup> |     
-      
-Metric is F1
-
-#### 2.7  Question Answering
-
-| **Dataset**  |  **XLMR** | **mBERT** | **Afro-XLMR** | **AfriBERTa** |  **SERENGETI-E110** | **SERENGETI-E250** |  **SERENGETI** | 
-|----------------|:---------:|:-------------:|:-----------:|:----------:|:----------:|:-----------:|:-----------:|
-|  QA-Swahili [ (Clark et al., 2020a)](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00317/96451/TyDi-QA-A-Benchmark-for-Information-Seeking)    | 82.79<sup>±1.93</sup> |  **83.40<sup>±0.78</sup>** | 79.94<sup>±0.39</sup> | 57.3<sup>±1.8</sup> |  79.76<sup>±0.52</sup> | 81.25<sup>±1.33</sup> | 80.01<sup>±0.78</sup> |
-
-Metric is F1
-#### 2.8  Language Identification
-We evaluate only Serengeti on the language identification datasets listed below and compare the results with AfroLID:
-
-| **Dataset**  |  **AfroLID** | **Serengeti** | 
-|----------------|:---------:|:-------------:|
-|  AfroLID [(Adebara et al., 2022b)](https://aclanthology.org/2022.emnlp-main.128.pdf)    | 96.14 | **97.64<sup>±0.02</sup>** |
-
-| **Dataset**  |  **Split** | **AfroLID** | **Serengeti** | 
-|----------------|:---------:|:-------------:|:---------:|
-|  AfriSenti [(Muhammad et al., 2022; Yimam et al., 2020)](https://arxiv.org/abs/2201.08277) | Amharic (amh) | 97.00 |  **99.50<sup>±0.01</sup>** |
-|  Ditto | Hausa (hau)  | 89.00 |  **98.09<sup>±0.02</sup>** |
-|  Ditto | Igbo  (ibo) | 46.00 | **95.28<sup>±0.00</sup>** |
-|  Ditto  | Nigerian Pidgin (pcm)   | 56.00 |  **77.73<sup>±0.01</sup>** |
-|  Ditto  | Swahili (swh)  | 96.00 |  **98.66<sup>±0.02</sup>** |
-|  Ditto  | Yoruba (yor) | 82.00 |  **98.96<sup>±0.00</sup>** |
-
-Metric is F1
 #  3. How to use Cheetah model
 
 Below is an example for using **Cheetah** predict masked tokens. 

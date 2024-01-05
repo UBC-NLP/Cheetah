@@ -13,11 +13,11 @@ Low-resource African languages pose unique challenges for natural language proce
 - [1 Our Language Models](#1-Our-Language-Models)
   - [1.1 Training Data](#11-training-data)
   - [1.2 Models Architecture](#12-models-architecture)
-  - [1.3 Cheetah Models](#13-serengeti-models)
-- [2. AfroNLU Benchmark and Evaluation](#2-our-benchmark-AfroNLU)
-  - [2.1 Named Entity Recognition](#21-named-entity-recognition)
-  - [2.2 Phrase Chuncking](#22-phrase-chuncking)
-  - [2.3 Part of Speech Tagging](#23-part-of-speech-tagging)
+  - [1.3 Cheetah Models](#13-cheetah-models)
+- [2. AfroNLG Benchmark and Evaluation](#2-our-benchmark-AfroNLG)
+  - [2.1 Machine Translation](#21-machine-translation)
+  - [2.2 Paraphrase](#22-paraphrase)
+  - [2.3 Summarization](#23-summarization)
   - [2.4 News Classification](#24-news-classification)
   - [2.5 Sentiment Analysis](#25-sentiment-analysis)
   - [2.6 Topic Classification](#26-topic-classification)
@@ -105,8 +105,15 @@ AfroNLG includes the following tasks: ```machine translation```,  ```paraphrase`
 | Nyankore $\rightarrow$ Luganda                 | Bleu            | 8.54<sup>±0.17</sup> | 6.91<sup>±0.23</sup> |2.01<sup>±0.25 </sup> |  **6.77<sup>±6.73</sup>**    | 6.25<sup>±10.26</sup> |         
 | Nyankore $\rightarrow$ Ateso                   | Bleu            | 3.33<sup>±0.11</sup> | 2.25<sup>±0.23</sup> |2.12<sup>±0.4</sup>    | 6.27<sup>±0.12</sup>     | **6.36<sup>±0.4</sup>** |
 
+#### 2.2  Paraphrase
+| **Lang-Pairs**  |**Metric**   |   **mT0** | **mT5** | **Afri-MT5** | **AfriTeVa** |  **Cheetah** |
+|----------------|:---------:|:-------------:|:-----------:|:----------:|:----------:|:----------:|                                        
+ | Multilingual   | Bleu  | 41.79<sup>±0.28</sup> | 41.75<sup>±0.21 </sup> |34.72<sup>±0.51</sup> | 43.02<sup>±1.25</sup> | **43.23<sup>±0.09</sup>**| 
+| Berber   | Bleu | 44.84<sup>±0.31</sup> | 44.03<sup>±0.24</sup> |36.08<sup>±0.83</sup>   | **46.41<sup>±0.71</sup>** |46.0<sup>±0.27</sup> |          
+| Kabyle   | Bleu | 25.91<sup>±0.13</sup> | 25.32<sup>±0.46</sup> |11.56<sup>±0.73</sup>   | 16.06<sup>±14.79</sup> | **26.27<sup>±0.56</sup>** |
 
-#### 2.2  Question Answering
+
+#### 2.3  Question Answering
 
 | **Lang-Pairs**  |**Metric**   |   **mT0** | **mT5** | **Afri-MT5** | **AfriTeVa** |  **Cheetah** |
 |----------------|:---------:|:-------------:|:-----------:|:----------:|:----------:|:----------:|

@@ -197,7 +197,7 @@ We discuss below some use cases for Cheetah and offer a number of broad impacts.
   In particular, we do not have access to native speakers of most of the languages covered. This hinders our ability to investigate samples from each (or at least the majority) of the languages.
      
 ## Supported languages
-Please refer to [**supported-languages**]("./supported-languages.txt")
+Please refer to [**supported-languages**](supported-languages.txt)
 
 ## Citation
 If you use the pre-trained model (Cheetah) for your scientific publication, or if you find the resources in this repository useful, please cite our paper as follows (to be updated):

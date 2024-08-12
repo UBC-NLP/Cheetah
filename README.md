@@ -210,13 +210,21 @@ Please refer to [**supported-languages**](supported-languages.txt)
 If you use the pre-trained model (Cheetah) for your scientific publication, or if you find the resources in this repository useful, please cite our paper as follows (to be updated):
 
 ```
-@misc{adebara2024cheetah,
-      title={Cheetah: Natural Language Generation for 517 African Languages}, 
-      author={Ife Adebara and AbdelRahim Elmadany and Muhammad Abdul-Mageed},
-      year={2024},
-      eprint={2401.01053},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{adebara-etal-2024-cheetah,
+    title = "Cheetah: Natural Language Generation for 517 {A}frican Languages",
+    author = "Adebara, Ife  and
+      Elmadany, AbdelRahim  and
+      Abdul-Mageed, Muhammad",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand and virtual meeting",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.691",
+    pages = "12798--12823",
 }
 ```
 
